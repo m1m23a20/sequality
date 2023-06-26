@@ -19,6 +19,7 @@ public class App {
 		int num3 = 1, num4 = 10;
 		System.out.format("Sum of %d to %d is %d. ", num3, num4, calculate.rangeSum(num3, num4));
 		System.out.format("Average is %.1f.%n", calculate.rangeAverage(num3, num4));
-		System.out.format("Sum of odd of %d to %d is %d.", num3, num4, calculate.rangeSum(num3, num4, num -> num % 2 == 0));
+		System.out.format("Sum of odd of %d to %d is %d.%n", num3, num4,
+				calculate.rangeSum(num3, num4, num -> num % 2 == 0));
 	}
 }
