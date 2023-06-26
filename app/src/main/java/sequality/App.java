@@ -10,5 +10,16 @@ public class App {
 
 	public static void main(String[] args) {
 		System.out.println(new App().getGreeting());
+
+		int num1 = 2, num2 = 3;
+		Calculate calculate = new Calculate();
+		System.out.println("Sum of " + num1 + " and " + num2 + " is " + calculate.sum(num1, num2));
+		System.out.format("Sum of %d and %d is %d. ", num1, num2, calculate.sum(num1, num2));
+		System.out.format("Average is %f.%n", calculate.average(num1, num2));
+
+		int num3 = 1, num4 = 10;
+		System.out.format("Sum of %d to %d is %d. ", num3, num4, calculate.rangeSum(num3, num4));
+		System.out.format("Average is %f.%n", calculate.rangeAverage(num3, num4));
+		System.out.format("Sum of odd of %d to %d is %d.", num3, num4, calculate.rangeSum(num3, num4, num -> num % 2 == 0));
 	}
 }
