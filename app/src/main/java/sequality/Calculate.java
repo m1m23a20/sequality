@@ -9,7 +9,7 @@ public class Calculate {
 	}
 
 	public double average(int x, int y) {
-		return sum(x, y) / 2;
+		return sum(x, y) / 2.0;
 	}
 
 	public int rangeSum(int start, int end) {
