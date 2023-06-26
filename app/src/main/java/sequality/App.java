@@ -13,7 +13,6 @@ public class App {
 
 		int num1 = 2, num2 = 3;
 		Calculate calculate = new Calculate();
-		System.out.println("Sum of " + num1 + " and " + num2 + " is " + calculate.sum(num1, num2));
 		System.out.format("Sum of %d and %d is %d. ", num1, num2, calculate.sum(num1, num2));
 		System.out.format("Average is %f.%n", calculate.average(num1, num2));
 
