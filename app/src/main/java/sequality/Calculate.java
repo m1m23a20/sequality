@@ -18,7 +18,7 @@ public class Calculate {
 
 	public int rangeSum(int start, int end, IntPredicate condition) {
 		var range = IntStream.rangeClosed(start, end);
-		if (condition == null)
+		if (condition != null)
 			range = range.filter(condition);
 		return range.sum();
 	}
